@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>TodoList-JS</title>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="inner">
+        <section class="greeting">
+          <h1 class="title">
+            Hi there,
+            <input type="text" id="name" placeholder="Your name here" />
+          </h1>
+        </section>
+        <!-- greeting end -->
+
+        <div class="wrap_todos">
+          <section class="create_todo">
+            <h3>Create A Todo</h3>
+            <h4>Today what I have to do is :</h4>
+            <form id="newTodoForm" class="new_todo_form">
+              <input
+                type="text"
+                name="content"
+                id="content"
+                class="content"
+                placeholder="Write  your todo"
+              />
+              <input type="submit" value="ADD" class="button submit" />
+            </form>
+          </section>
+          <!-- create_todo end -->
+
+          <section class="todo_list">
+            <h3>My Todos</h3>
+            <div class="list" id="todoList"></div>
+          </section>
+        </div>
+        <!-- wrap_todos end -->
+        <section class="modal hidden">
+          <h3>Edit todo</h3>
+          <form class="wrap_modal" id="editForm">
+            <input type="text" id="editedTodo" class="edited-todo" />
+            <input type="submit" value="SAVE" class="button save" />
+          </form>
+          <div class="close">❌</div>
+        </section>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
